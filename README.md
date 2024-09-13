@@ -56,3 +56,20 @@ You must follow the **SDLC process** to refactor the code:
    - Once you complete the refactorization, push your changes to your forked repository.
    - Create a pull request (PR) to the original repository, explaining the improvements you made and how you followed the **SDLC** approach.
 
+
+## Documento de comentarios de los ejercicios.
+   **EJERCICIO AGEVALIDATION**
+
+1. En este primer paso, vamos a definir la edad minima que es la constante, y lo cambiamos por lo siguiente "private static final int MINIMUM_AGE = 18;"
+
+2. Creaamos un objeto Scanner para leer la entrada del usuario
+  Scanner scanner = new Scanner(System.in);
+
+3. Solicitamos al usuario que ingrese su edad y lo cambiamos por lo siguiente. 
+System.out.print("Enter age: ");
+        int age = scanner.nextInt();
+4. 
+
+   **STORE**
+1. 
+

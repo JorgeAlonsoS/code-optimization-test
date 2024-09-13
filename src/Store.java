@@ -1,16 +1,22 @@
 public class Store {
+
+    // Definir constantes para los precios de los productos
+    private static final int[] PRICES = {15, 10, 5}; // Precios de los productos
+    private static final int[] QUANTITIES = {2, 3, 4}; // Cantidades de los productos
+    
+    // Definir constante para el umbral de ventas
+    private static final int SALES_THRESHOLD = 50;
+
     public static void main(String[] args) {
-        int p1 = 15;
-        int p2 = 10;
-        int p3 = 5;
+        int totalSales = 0;
 
-        int total1 = p1 * 2;
-        int total2 = p2 * 3;
-        int total3 = p3 * 4;
+        // Calcular las ventas totales usando arrays
+        for (int i = 0; i < PRICES.length; i++) {
+            totalSales += PRICES[i] * QUANTITIES[i];
+        }
 
-        int totalSales = total1 + total2 + total3;
-
-        if (totalSales > 50) {
+        // Evaluar el rendimiento de ventas
+        if (totalSales > SALES_THRESHOLD) {
             System.out.println("Good sales performance");
         } else {
             System.out.println("Low sales performance");

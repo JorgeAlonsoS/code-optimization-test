@@ -1,13 +1,27 @@
+import java.util.Scanner;
+
 public class AgeValidation {
+    
+    // Definir constante para la edad mínima requerida
+    private static final int MINIMUM_AGE = 18;
+
     public static void main(String[] args) {
-        int age = 18;
+        // Crear un objeto Scanner para leer la entrada del usuario
+        Scanner scanner = new Scanner(System.in);
         
-        if (age >= 18) {
+        // Solicitar al usuario que ingrese su edad
+        System.out.print("Enter age: ");
+        int age = scanner.nextInt();
+        
+        // Validar si el usuario tiene la edad mínima requerida
+        if (age >= MINIMUM_AGE) {
             System.out.println("Access granted");
-        }
-        
-        if (age < 18) {
+        } else {
             System.out.println("Access denied");
         }
+
+        // Cerrar el escáner
+        scanner.close();
     }
 }
+
